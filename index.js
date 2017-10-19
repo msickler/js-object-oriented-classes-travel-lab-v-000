@@ -22,8 +22,7 @@ class Route {
 		return horizonallyTravelled + verticallyTravelled;
   }
 
-  estimatedTime() {
-    let peakTime = false
+  estimatedTime(peakTime) {
     if (peakTime) {
       return this.blocksTravelled() / 2
     } else {
