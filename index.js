@@ -21,4 +21,13 @@ class Route {
 		let verticallyTravelled = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
 		return horizonallyTravelled + verticallyTravelled;
   }
+
+  estimatedTime() {
+    let peakTime = false
+    if peakTime {
+      return this.blocksTravelled() / 2
+    } else {
+      return this.blocksTravelled() / 3
+    }
+  }
 }
